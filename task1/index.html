@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>任务一</title>
+</head>
+
+<body>
+<h1>我的个人网站</h1>
+<ul>
+	<li><a href="#">首页</a></li>
+	<li><a href="#about">关于站长</a></li>
+	<li><a href="#life">生活杂事</a></li>
+	<li><a href="#work">学习工作</a></li>
+	<li><a href="#contact">联系我们</a></li>
+</ul>
+<a name="about"></a>
+<h2>关于站长</h2>
+<h3>一个不为人知的前端攻城狮</h3>
+<hr>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, sit accusamus aliquid aperiam non perspiciatis dolor temporibus possimus ab quas. Illo, <br>
+	atque, maxime qui non <a href="http://ife.baidu.com" target="_blank">eligendi hic in a fuga</a>!
+</p>
+<p>
+	<img src="img.jpg" alt="好看的图片">
+</p>
+<p>
+	Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit. Enim, ea suscipit possimus quod velit porro minus voluptas assumenda magnam veritatis deleniti inventore voluptates quaerat. <em>Obcaecati vero</em> itaque aperiam nisi nam.
+</p>
+<a name="life"></a>
+<h2>生活杂事</h2>
+<h3>家家有本难念的经</h3>
+<hr>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, numquam, veniam, atque, alias fugit minima aperiam nisi<br>
+	cumque molestiae reprehenderit quis sit recusandae aut ut rem soluta vitae tenetur quod.
+</p>
+<p>
+	<img src="img.jpg" alt="好看的图片">
+</p>
+<p>
+	Lorem ipsum dolor sit amet, <a href="http://ife.baidu.com" target="_blank">consectetur adipisicing</a> elit. Quis, sint, a, sit, harum esse possimus tempora dicta recusandae aut rem repellat fugiat nam. Vel explicabo dolor architecto consequuntur dicta reprehenderit.
+</p>
+<a name="work"></a>
+<h2>学习工作</h2>
+<h3>以下是一些做过的项目</h3>
+<hr>
+<dl>
+	<dt>我的项目截图</dt>
+	<dd><img src="img.jpg" alt="好看的图片"></dd>
+	<dt>我的项目截图</dt>
+	<dd><img src="img.jpg" alt="好看的图片"></dd>
+	<dt>我的项目截图</dt>
+	<dd><img src="img.jpg" alt="好看的图片"></dd>
+	<dt>我的项目截图</dt>
+	<dd><img src="img.jpg" alt="好看的图片"></dd>
+	<dt>我的项目截图</dt>
+	<dd><img src="img.jpg" alt="好看的图片"></dd>
+</dl>
+<table border="1" cellpadding="0" cellspacing="0">
+	<thead>
+		<tr>
+			<th width="100">项目编号</th>
+			<th width="100">开始时间</th>
+			<th width="100">结束时间</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>2016-3-15</td>
+			<td>2016-3-15</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2016-3-15</td>
+			<td>2016-3-15</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2016-3-15</td>
+			<td>2016-3-15</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>2016-3-15</td>
+			<td>2016-3-15</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="3">合计项目数量: 4</td>
+		</tr>
+	</tfoot>
+</table>
+<a name="contact"></a>
+<h2>联系我们</h2>
+<h3>如有疑问请与我联系</h3>
+<hr>
+<aside>
+	我们的联系方式如下:<br>
+	<address>地址: 北京市xxx</address><br>
+</aside>
+<form action="#" method="post" name="form1" id="form1">
+	<p>
+		<span>姓名</span>
+		<input type="text" name="txtName" id="txtName" placeholder="请输入您的姓名" min="2" required>
+	</p>
+	<p>
+		<span>性别</span>
+		<label><input type="radio" checked name="rblGender" value="1">男士</label>
+		<label><input type="radio" checked name="rblGender" value="0">女士</label>
+	</p>
+	<p>
+		<span>邮箱</span>
+		<input type="text" name="txtEmail" id="txtEmail" placeholder="请输入您的邮箱" required>
+	</p>
+	<p>
+		<span>电话</span>
+		<input type="text" name="txtTel" id="txtTel" placeholder="请输入您的电话" required>
+	</p>
+	<p>
+		<span>主题</span>
+		<input type="text" name="txtSubject" id="txtSubject" placeholder="请输入主题" required>
+	</p>
+	<p>
+		<span>内容</span>
+		<textarea name="txtContent" id="txtContent" cols="30" rows="10" placeholder="请输入内容" required></textarea>
+	</p>
+	<p>
+		<span>回执</span>
+		<input type="checkbox" checked>
+	</p>
+	<p>
+		<span>其它</span>
+		<select name="ddlOther" id="ddlOther">
+			<optgroup label="选项分组1">
+				<option value="0">选项11</option>
+				<option value="0">选项12</option>
+				<option value="0">选项13</option>
+			</optgroup>
+			<optgroup label="选项分组2">
+				<option value="0">选项21</option>
+				<option value="0">选项22</option>
+				<option value="0">选项23</option>
+			</optgroup>
+		</select>
+	</p>
+	<p>
+		<button type="submit" id="btnSubmit">提交</button>
+		<button type="reset" id="btnReset">清空</button>
+	</p>
+</form>
+<br>
+<hr>
+版权所有 &copy; 2016
+</body>
+</html>
