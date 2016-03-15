@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>任务1-4-1 - margin方式</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-width:400px;min-height:200px}
+#main-wrap{width:400px;height:200px;background:#ccc;position:absolute;top:50%;left:50%;margin:-100px 0 0 -200px;overflow:hidden}
+#top-left,#bottom-right{position:absolute;z-index:10;width:100px;height:100px;border-radius:50px;background:#fc0}
+#top-left{left:-50px;top:-50px}
+#bottom-right{right:-50px;bottom:-50px}
+</style>
+</head>
+
+<body>
+<div id="main-wrap">
+	<span id="top-left"></span>
+	<span id="bottom-right"></span>
+</div>
+</body>
+</html>
