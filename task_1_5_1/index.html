@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>任务1_5_1</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font:400 14px/24px "Microsoft YaHei",微软雅黑,arial}
+body{background:#dedede}
+.clear{*zoom:1}
+.clear:after{visibility:hidden;display:block;font-size:0;content:'';clear:both;height:0}
+#header{width:100%;height:60px;background:#333}
+#header a.logo{float:left;margin:10px 0 0 10px}
+#header ul{float:right;list-style:inside;margin-right:10px}
+#header ul li{float:left;margin:0 5px 0 0}
+#header ul li a{color:#fff;text-decoration:none;line-height:60px;font-size:12px}
+#bottom{width:100%;height:60px;background:#000;text-align:center;color:#fff;line-height:40px}
+
+#main-wrap{padding:20px;position:relative}
+
+#main-content{margin:0 380px 0 0;min-height:100px}
+#main-content>article{background:#fff;border:1px solid #ccc;box-shadow:2px 2px 0 0 rgba(0,0,0,.3);margin-bottom:20px;padding:20px}
+#main-content>article>h2{font-size:20px;line-height:38px;color:#333}
+#main-content>article>h3{font-size:16px;line-height:28px;color:#666;margin-bottom:10px}
+#main-content>article>span{}
+#main-content>article>hr{margin:15px 0}
+#main-content>article p{margin:10px 0}
+#main-content>article img{max-width:100%}
+#main-content>article blockquote{font-style:italic;padding:10px;border:1px solid #ccc;border-left-width:4px;border-top-left-radius:5px;border-bottom-left-radius:5px;color:#999}
+#main-content>article ul{list-style:none}
+#main-content>article ol{margin-left:15px}
+#main-content>article dl.img-list{max-width:100%}
+#main-content>article dl.img-list dt{width:100%;font-weight:600;font-size:20px;margin-bottom:20px}
+#main-content>article dl.img-list dd{width:124px;border:1px solid #ccc;padding:10px;margin:0 10px 10px 0;float:left;text-align:center}
+#main-content>article dl.img-list dd span{width:104px;float:left;margin-bottom:10px}
+#main-content>article dl.img-list dd img{width:104px;float:left;max-width:100%}
+#main-content>article table{border-collapse:collapse;border:1px solid #ccc;width:100%}
+#main-content>article thead{background:#333;color:#fff;text-align:left;text-indent:10px}
+#main-content>article tfoot{background:#ccc;color:#333;text-align:left;text-indent:10px}
+#main-content>article tbody td{padding-left:10px;border:1px solid #ccc;line-height:1.5em}
+
+#main-wrap>aside{position:absolute;top:20px;right:20px;width:360px;min-height:100px;background:#fff;border:1px solid #ccc;box-shadow:2px 2px 0 0 rgba(0,0,0,.3);padding:20px}
+#main-wrap>aside>h2{border-left:3px solid #ccc;padding-left:10px;font-size:18px;line-height:30px;margin-bottom:15px}
+#main-wrap>aside .form-group,#main-wrap>aside .form-tips{margin-bottom:10px;width:100%;float:left}
+#main-wrap>aside .form-tips{color:#bbb;text-indent:110px}
+#main-wrap>aside .form-group>span{width:100px;text-align:right;float:left;margin-right:10px}
+#main-wrap>aside .form-group>input,#main-wrap>aside .form-group>textarea{width:200px;border:1px solid #b1b1b1;padding:0 5px}
+#btnSubmit{border-radius:6px;width:100%;border:none;background:#3355D0;height:30px;line-height:30px;text-align:center;color:#fff;cursor:pointer}
+</style>
+</head>
+
+<body>
+<div id="header">
+	<a class="logo"><img src="logo.png"></a>
+	<ul>
+		<li><a href="#">导航链接一</a></li>
+		<li><a href="#">导航链接二</a></li>
+		<li><a href="#">导航链接三</a></li>
+		<li><a href="#">导航链接四</a></li>
+	</ul>
+</div>
+<div id="main-wrap" class="clear">
+	<div id="main-content">
+		<article>
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<span>admin发布于2016-3-16 23:39:27</span>
+			<hr>
+			<p>
+				这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+			</p>
+			<blockquote>
+				这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，
+			</blockquote>
+			<p>
+				<img src="../task1/img.jpg">
+			</p>
+		</article>
+		<article>
+			<h2>另一篇文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<span>admin发布于2016-3-16 23:39:27</span>
+			<hr>
+			<p>
+				这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+			</p>
+			<blockquote>
+				这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，这里是一段引用，
+			</blockquote>
+			<p>
+				<img src="../task1/img.jpg">
+			</p>
+			<ul>
+				<li>列表项目1</li>
+				<li>列表项目2</li>
+				<li>列表项目3</li>
+				<li>列表项目4</li>
+				<li>列表项目5</li>
+			</ul>
+		</article>
+		<article>
+			<dl class="img-list clear">
+				<dt>图片</dt>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+				<dd>
+					<span>好看的图片</span>
+					<img src="../task1/img.jpg">
+				</dd>
+			</dl>
+		</article>
+		<article>
+			<h2>最后一篇文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<span>admin发布于2016-3-17 00:06:58</span>
+			<hr>
+			<ol>
+				<li>我是第1名</li>
+				<li>我是第2名</li>
+				<li>我是第3名</li>
+				<li>我是第4名</li>
+				<li>我是第5名</li>
+			</ol>
+			<table>
+				<thead>
+					<tr>
+						<th>编号</th>
+						<th>姓名</th>
+						<th>排序</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>共计</td>
+						<td colspan="2">10086</td>
+					</tr>
+				</tfoot>
+			</table>
+		</article>
+	</div>
+	<aside>
+		<h2>这里是侧栏的标题</h2>
+		<form id="formContact" action="#" method="post">
+			<div class="form-group">
+				<span>请输入邮箱地址</span>
+				<input type="email" name="email" id="txtEmail" placeholder="这里是一个文本输入框">
+			</div>
+			<div class="form-tips">
+				邮箱地址按照格式输入
+			</div>
+			<div class="form-group">
+				<span>请输入密码</span>
+				<input type="password" name="password" id="txtPassword" value="123456">
+			</div>
+			<div class="form-group">
+				<span>请重复输入密码</span>
+				<input type="password" name="rpassword" id="txtRPassword" value="123456">
+			</div>
+			<div class="form-tips">
+				密码为6-16位英文数字
+			</div>
+			<div class="form-group">
+				<span>性别</span>
+				<label><input name="rblGender" type="radio" value="0">男</label>
+				<label><input name="rblGender" type="radio" value="1">女</label>
+			</div>
+			<div class="form-group">
+				<span>城市</span>
+				<select name="city" id="ddlCity">
+					<option value="北京">北京</option>
+					<option value="上海">上海</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<span>爱好</span>
+				<label><input name="cblHobby[]" type="checkbox" value="运动">运动</label>
+				<label><input name="cblHobby[]" type="checkbox" value="艺术">艺术</label>
+				<label><input name="cblHobby[]" type="checkbox" value="科学">科学</label>
+			</div>
+			<div class="form-group">
+				<span>个人描述</span>
+				<textarea name="desc" id="txtDesc" cols="30" rows="4" placeholder="这里是一个多行输入框，请输入您的个人描述"></textarea>
+			</div>
+			<button type="submit" id="btnSubmit">确认提交</button>
+		</form>
+	</aside>
+</div>
+<div id="bottom">
+	版权所有 &copy;
+</div>
+</body>
+</html>
