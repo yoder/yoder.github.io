@@ -1,0 +1,26 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,address{display:block}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td
+{margin:0;padding:0;font-family:font-family:"Microsoft YaHei",微软雅黑,arial,sans-serif;font-size:12px;text-size-adjust:100%}
+fieldset,img{border:0}
+:focus{outline:0}
+hr{border:0;border-top:1px solid #eee;margin:20px 0;border-bottom:1px solid #fff}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:bold}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{font-size:100%}
+body,button,input,select,textarea{font:12px/1.5 "Microsoft YaHei",微软雅黑,arial,sans-serif}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left}
+:link,:visited,ins{text-decoration:none}
+ul,ol{margin: 0 0 10px 23px}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+.clear:after{content:"";display:block;height:0;clear:both}
+.clear{zoom:1}
+img{vertical-align:middle;border:0}
+html{overflow:scroll;overflow-x:hidden}
+html,body{width:100%}
+
+body>header{width:892px;margin:0 auto;height:61px;border-bottom:2px solid #938e8a;position:relative}
+body>header>h2{width:103px;height:21px;position:absolute;left:0;top:0;background:#DB3E75;padding:40px 0 0 7px}
+body>header>h2 a{color:#fff;font-weight:400;font:400 12px/21px '黑体',sans-serif}
+body>header>span{position:absolute;right:0;bottom:0;font:400 12px/16px '黑体',sans-serif;color:#d45d5c}
