@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+<meta charset="UTF-8">
+<title>IFE JavaScript Task 06</title>
+<style type="text/css">
+*{margin:0;padding:0;outline:none;font:400 14px/24px "Microsoft YaHei",微软雅黑,arial}
+body{padding:10px}
+#main-wrap{width:500px;margin:0 auto}
+#main-wrap:after{visibility:hidden;display:block;font-size:0;content:'';clear:both;height:0}
+#main-form,#main-rows{width:500px;margin:5px 0;float:left}
+#main-form button,#main-form input{padding:0 6px}
+#main-rows span{padding:3px 12px;background:#f00;color:#fff;float:left;margin-right:5px;cursor:pointer;border-radius:2px}
+</style>
 </head>
+
 <body>
-	
+<div id="main-wrap">
+	<div id="main-form">
+		<input type="text" id="txtKey">
+		<button id="btnLIn" type="button">左侧入</button>
+		<button id="btnRIn" type="button">右侧入</button>
+		<button id="btnLOut" type="button">左侧出</button>
+		<button id="btnROut" type="button">右侧出</button>
+	</div>
+	<div id="main-rows"></div>
+</div>
+<script>
+(function(){
+	var data = [];
+	/*
+	* getElementById简写
+	*/
+	function $(id, doc) {
+		doc = doc || document;
+		return (id.charAt(0) === '#' ? doc.getElementById(id.substr(1)) : doc.getElementsByTagName(id));
+	};
+	/*
+	* 原形扩展的方式去除字符串两头空格及中间空白
+	*/
+	String.prototype.trim = function() {
+		return this.replace(/[(^\s+)(\s+$)]/g, "")
+	};
+	/*
+	* 渲染列表
+	 */
+	function renderList() {
+		var sb = [];
+		// for (var d in data) {
+		// 	console.log(data[d]);
+		// 	//sb.push('<span data-id="' + data[d] + '">' + data[d] + '</span>')
+		// 	sb.push('<span>' + data[d] + '</span>')
+		// };
+		for(var i=0;i<data.length;i++){
+			sb.push(data[i])
+		};
+		dom.rows.innerHTML = sb.join()
+	};
+	/*
+	* 缓存dom
+	 */
+	var dom = {
+		input: $('#txtKey'),			//输入框
+		lin: $('#btnLIn'),				//左侧入
+		rin: $('#btnRIn'),				//右侧入
+		lout: $('#btnLOut'),			//左侧出
+		rout: $('#btnROut'),			//右侧出
+		rows: $('#main-rows')			//显示框
+	};
+	dom.lin.addEventListener('click', function(){
+		var val = dom.input.value.trim();
+		if(val.length > 0){
+			dom.input.value = '';
+			dom.input.focus();
+			data.push(val);
+			renderList()
+		}else{
+			alert('请输入!');
+			dom.input.focus()
+		}
+	});
+})()
+</script>
 </body>
 </html>
